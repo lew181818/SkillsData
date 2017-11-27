@@ -5,6 +5,8 @@ getData.py: Query Jive API to download every SEI person's resume
 Argument[1]: Jive user name
 Argument[2]: Jive password
 
+Update the path variable in the code to store the resumes in the directory you want. Make sure the directory exists. 
+
 Not in code: convert resumes to .txt. 
  - docx: for f in *.docx; do textutil -convert txt "$f"; done
  - pdf: for f in *.pdf; do pdftotext "$f" "$f".txt; done
